@@ -8,9 +8,9 @@ export default new Router({
   base: '/dev/pages',
   routes: [
     {
-      path: '/helloWorld',
-      name: 'hello-world',
-      component: () => import('@/components/helloWorld.vue')
+      path: '',
+      name: '',
+      component: () => import('')
     }
   ]
 })

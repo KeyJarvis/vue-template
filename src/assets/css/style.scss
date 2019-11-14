@@ -1,0 +1,172 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* html,
+* html body {
+  background-image: url(about:blank);
+  background-attachment: fixed
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Microsoft Yahei';
+}
+
+ul,
+li,
+ol,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+div,
+span,
+iframe,
+map,
+font,
+img,
+a img,
+samp,
+strong,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+p,
+blockquote,
+a,
+address,
+code,
+form,
+label,
+table,
+tr,
+td,
+th {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+input:focus {
+  outline: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+
+table th,
+table td {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+a,
+img,
+button,
+input,
+textarea {
+  -webkit-appearance: none !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input:checked::after,
+input:checked::before,
+textarea:checked::after,
+textarea:checked::before {
+  -webkit-appearance: none !important;
+}
+
+.clearbox {
+  width: 100%;
+  height: 0px;
+  font-size: 1px;
+  line-height: 1;
+  clear: both;
+  zoom: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix {
+  *overflow: hidden;
+  *zoom: 1;
+}
+
+.clearfix:after {
+  content: " ";
+  display: table;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+
+.clearit {
+  clear: both;
+  height: 0;
+  font-size: 0;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'PingFangSC-Regular';
+  src: url('../fonts/PingFang-SC-Regular.otf') format('truetype');
+  font-weight: normal;
+}
