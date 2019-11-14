@@ -12,28 +12,10 @@ yarn install
 yarn run serve
 ```
 
-### Compiles and minifies for sit
-
-```
-yarn run sit
-```
-
-### Compiles and minifies for uat
-
-```
-yarn run uat
-```
-
 ### Compiles and minifies for production
 
 ```
 yarn run build
-```
-
-### Run your tests
-
-```
-yarn run test
 ```
 
 ### Lints and fixes files

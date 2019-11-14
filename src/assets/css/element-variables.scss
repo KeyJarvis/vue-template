@@ -1,0 +1,20 @@
+/* 改变主题色变量 - deloitte主题颜色 */
+$--color-primary: #009a44;
+$--color-success: #7fc141;
+$--color-warning: #f7914d;
+$--color-danger: #ee2226;
+
+/* 字体颜色 */
+$--color-text-primary: #333;
+$--color-text-regular: #666;
+$--color-text-secondary: #999;
+$--color-text-placeholder: #ccc;
+
+/* 边框颜色 */
+$--border-color-base: #ddd;
+$--border-color-light: #ebebeb;
+$--border-color-lighter: #eee;
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+@import "~element-ui/packages/theme-chalk/src/index";
