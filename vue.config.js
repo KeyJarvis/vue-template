@@ -11,11 +11,15 @@ module.exports = {
   },
   devServer: {
     port: 8888,
+    // 跨域代理
     proxy: {
       '^/prefix_need_to_proxy': {
         target: '<url>',
         ws: true,
-        changeOrigin: true
+        changeOrigin: true,// 允许跨域
+        pathRewrite: {
+          '^/api': '' // 当遇到/api接口，‘/api’代替target里面的地址
+        }
       }
     }
   },

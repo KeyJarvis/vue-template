@@ -1,6 +1,5 @@
 import axios from 'axios'
 import Vue from 'vue'
-import store from '@/store'
 import { Message, Loading } from 'element-ui'
 
 axios.defaults.baseURL = process.env.VUE_APP_API_SERVER
@@ -12,8 +11,6 @@ let loadingInstance
 
 axios.interceptors.request.use(config => {
   loadingInstance = Loading.service({ fullscreen: true })
-  const token = store.state.baseStore.sessionToken
-  token && (config.headers.Authorization = 'Bearer ' + token)
   return config
 }, error => {
   loadingInstance && loadingInstance.close()
@@ -22,13 +19,6 @@ axios.interceptors.request.use(config => {
 })
 axios.interceptors.response.use(response => {
   loadingInstance && loadingInstance.close()
-  let res = response.data
-  if (res.code === '302') {
-    window.location.href = res.data.location
-    window.localStorage.removeItem('sessionToken')
-    store.state.baseStore.sessionToken = undefined
-    return
-  }
   return response
 }, error => {
   loadingInstance && loadingInstance.close()

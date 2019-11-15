@@ -2,10 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from '@/router'
 import store from '@/store'
-// plugins
+// 引入plugins中的插件
 import '@/plugins/element'
 import '@/plugins/axios'
-import '@/plugins/api'
 // 引入自定义相关css样式
 import '@/assets/css/style.scss'
 import '@/assets/css/component.scss'

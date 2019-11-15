@@ -1,5 +1,7 @@
 # vue-template
 
+> 基于`vue-cli`脚手架搭建，整合了 `element ui` 与 `axios`。
+
 ## Project setup
 
 ```
@@ -38,7 +40,6 @@ vue-template
 │   ├── api // 封装后的 API 接口
 │   ├── assets // 直接引用的静态资源
 │   ├── components // 通用组件
-│   ├── mock // mock
 │   ├── pages  // 页面
 │   ├── plugins // 通用插件
 │   ├── router  // 路由管理
@@ -64,7 +65,6 @@ vue-template
 - src/api: 封装后的 API 接口
 - src/assets: 直接引用的静态资源
 - src/components: Vue 通用组件
-- src/mock: 前端 mock
 - src/pages: Vue 页面
 - src/plugins: Vue 插件
 - src/router: Vue 路由
